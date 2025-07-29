@@ -1,58 +1,182 @@
-# College-Erp
+# 🎓 College-Erp: A Comprehensive College Management System
 
-## Description
+A full-stack web application designed to streamline and automate college administration, faculty operations, and student engagement. College-Erp serves as a centralized platform to manage student records, faculty information, course materials, attendance, assessments, and more — with a secure and responsive interface for Admins, Faculty, and Students.
 
-College-Erp is a comprehensive Enterprise Resource Planning (ERP) system designed for colleges and educational institutions. It provides a centralized platform to manage various aspects of college administration, including student management, faculty management, department management, and more. The system is built using React for the frontend and Node.js for the backend.
+---
 
-## Project Structure
+## 🚀 Tech Stack
 
-The project is structured into two main directories:
+### 🖥️ Frontend
 
-*   `client/`: This directory contains the React frontend of the application. It includes components, styles, and the main application logic.
-*   `server/`: This directory contains the Node.js backend of the application. It includes the server setup, API endpoints, database models, and middleware.
+- **React** – UI development
+- **Redux** – Global state management
+- **React Router** – Client-side routing
+- **Material UI (MUI)** – Pre-built, accessible components
+- **Tailwind CSS + Tailwind Scrollbar** – Custom styling and modern layout
+- **Axios** – API request handler
+- **Moment.js** – Date formatting
+- **jwt-decode** – Token decoding
+- **react-file-base64**, **react-loader-spinner**, **react-spinners** – File input & loaders
 
-## Dependencies
+### ⚙️ Backend
 
-### Client
+- **Node.js** – JavaScript runtime
+- **Express.js** – Web framework
+- **MongoDB + Mongoose** – NoSQL database with schema-based modeling
+- **bcryptjs** – Password hashing
+- **jsonwebtoken** – Secure authentication via JWT
+- **dotenv** – Environment variable management
+- **cors**, **nodemon** – Middleware & auto-restart dev utility
 
-The client-side dependencies are listed in `client/package.json`:
+---
 
-*   chart.js: "^4.4.9"
-*   react-chartjs-2: "^5.3.0"
+## 📦 Project Setup
 
-### Server
+### 🔧 Frontend
 
-The server-side dependencies are listed in `server/package.json`:
+```bash
+cd client
+npm install
+npm start
+Visit the app on http://localhost:3000
 
-*   (Dependencies from server/package.json would be listed here if available)
+🛠️ Backend
+bash
+Copy
+Edit
+cd server
+npm install
+Create a .env file in the server/ directory with the following:
 
-## Setup Instructions
+ini
+Copy
+Edit
+CONNECTION_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/your-db
+Then start the server:
 
-### Client
+bash
+Copy
+Edit
+npm start
+Server runs on http://localhost:5001
 
-1.  Navigate to the `client/` directory: `cd client`
-2.  Install the dependencies: `npm install`
-3.  Start the client: `npm start`
+🧩 Key Features
+👑 Admin Dashboard
+Manage Admins, Departments, Faculty, Students, and Subjects
 
-### Server
+Create and manage Notices
 
-1.  Navigate to the `server/` directory: `cd server`
-2.  Install the dependencies: `npm install`
-3.  Start the server: `npm start`
+Assign subjects to faculty
 
-## Database Setup
+Update Profile and Password
 
-(Detailed instructions on how to set up the database would be provided here)
+👨‍🏫 Faculty Dashboard
+Create Tests
 
-## API Endpoints
+Mark Attendance
 
-(A list of available API endpoints would be provided here)
+Upload Marks
 
-## Contribution
+View & Edit Profile
 
-Contributions are welcome! Please follow these steps:
+👨‍🎓 Student Dashboard
+View Attendance, Subjects, and Test Results
 
-1.  Fork the repository.
-2.  Create a new branch for your feature or bug fix.
-3.  Make your changes and commit them with descriptive messages.
-4.  Submit a pull request.
+Update Profile and Password
+
+🔐 Security
+Authentication: JWT-based login for all roles
+
+Authorization: Role-based access control
+
+📱 Responsive Design
+Fully responsive interface built with Tailwind CSS and MUI
+
+🔌 API Endpoints
+👑 Admin Routes
+bash
+Copy
+Edit
+POST    /api/admin/login
+POST    /api/admin/register
+POST    /api/admin/addFaculty
+POST    /api/admin/addStudent
+POST    /api/admin/addSubject
+POST    /api/admin/createNotice
+GET     /api/admin/getFaculty
+GET     /api/admin/getStudent
+GET     /api/admin/getSubject
+PUT     /api/admin/updateProfile/:id
+PUT     /api/admin/updatePassword/:id
+DELETE  /api/admin/deleteAdmin/:id
+DELETE  /api/admin/deleteFaculty/:id
+DELETE  /api/admin/deleteStudent/:id
+DELETE  /api/admin/deleteSubject/:id
+👨‍🏫 Faculty Routes
+bash
+Copy
+Edit
+POST    /api/faculty/login
+POST    /api/faculty/register
+POST    /api/faculty/createTest
+POST    /api/faculty/markAttendance
+POST    /api/faculty/uploadMarks
+PUT     /api/faculty/updateProfile/:id
+PUT     /api/faculty/updatePassword/:id
+👨‍🎓 Student Routes
+bash
+Copy
+Edit
+POST    /api/student/login
+POST    /api/student/register
+GET     /api/student/attendance
+GET     /api/student/subjects
+GET     /api/student/testResults
+PUT     /api/student/updateProfile/:id
+PUT     /api/student/updatePassword/:id
+🧠 Data Models
+Admin – System administrator
+
+Faculty – Professors and teaching staff
+
+Student – Enrolled users
+
+Subject – Course-related information
+
+Department – Academic departments
+
+Notice – Admin-generated announcements
+
+Attendance – Student attendance records
+
+Marks – Uploaded test marks
+
+Test – Exams or assessments
+
+FacultySubject – Subject assignments for faculty
+
+🤝 Contributing
+Want to contribute? You're welcome!
+
+Fork the repository
+
+Create a new branch (git checkout -b feature/your-feature)
+
+Commit your changes (git commit -m 'Add your feature')
+
+Push to the branch (git push origin feature/your-feature)
+
+Open a Pull Request
+
+📄 License
+This project is licensed under the MIT License.
+
+🌐 Live Demo (Optional)
+Add your deployed link here if hosted:
+
+arduino
+Copy
+Edit
+https://your-live-site-url.com
+✨ Acknowledgements
+Thanks to the open-source tools and libraries that made this project possible.
