@@ -28,7 +28,6 @@ A full-stack web application designed to streamline and automate college adminis
 - **dotenv** – Environment variable management
 - **cors**, **nodemon** – Middleware & auto-restart dev utility
 
----
 
 ## 📦 Project Setup
 
@@ -44,15 +43,15 @@ Visit the app on http://localhost:3000
 ```bash
 cd server
 npm install
+```
 Create a .env file in the server/ directory with the following:
 ```
 CONNECTION_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/your-db
+```
 Then start the server:
 ```bash
 npm start
 Server runs on http://localhost:5001
----
----
 ```
 
 ## 🧩 Key Features
@@ -85,7 +84,6 @@ Server runs on http://localhost:5001
 
 * Fully responsive interface built with Tailwind CSS and MUI
 
----
 
 ## 🔌 API Endpoints
 
@@ -133,7 +131,6 @@ PUT     /api/student/updateProfile/:id
 PUT     /api/student/updatePassword/:id
 ```
 
----
 
 ## 🧠 Data Models
 
@@ -148,7 +145,6 @@ PUT     /api/student/updatePassword/:id
 * **Test** – Exams or assessments
 * **FacultySubject** – Subject assignments for faculty
 
----
 
 ## 🤝 Contributing
 
@@ -160,21 +156,15 @@ Want to contribute? You're welcome!
 4. Push to the branch (`git push origin feature/your-feature`)
 5. Open a Pull Request
 
----
 
 ## 📄 License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
----
+This project is licensed under the [MIT License](https://github.com/SAYAN957/College_Management_System/tree/main?tab=MIT-1-ov-file).
 
 
 ## ✨ Acknowledgements
 
 Thanks to the open-source tools and libraries that made this project possible.
 
----
-
-```
 
 
