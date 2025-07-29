@@ -159,7 +159,7 @@ Want to contribute? You're welcome!
 
 ## 📄 License
 
-This project is licensed under the [MIT License](https://github.com/SAYAN957/College_Management_System/tree/main?tab=MIT-1-ov-file).
+This project is licensed under the [MIT License](https://github.com/SAYAN957/College_Management_System/blob/main/LICENSE).
 
 
 ## ✨ Acknowledgements
