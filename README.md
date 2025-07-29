@@ -1,8 +1,3 @@
-Here’s a **professionally styled, polished README.md** for your **College-Erp** project — clean, modern, and portfolio-ready:
-
----
-
-````markdown
 # 🎓 College-Erp: A Comprehensive College Management System
 
 A full-stack web application designed to streamline and automate college administration, faculty operations, and student engagement. College-Erp serves as a centralized platform to manage student records, faculty information, course materials, attendance, assessments, and more — with a secure and responsive interface for Admins, Faculty, and Students.
@@ -43,32 +38,19 @@ A full-stack web application designed to streamline and automate college adminis
 cd client
 npm install
 npm start
-````
+Visit the app on http://localhost:3000
 
-Visit the app on [http://localhost:3000](http://localhost:3000)
-
-### 🛠️ Backend
-
-```bash
+🛠️ Backend
+bash
 cd server
 npm install
-```
-
-Create a `.env` file in the `server/` directory with the following:
-
-```
+Create a .env file in the server/ directory with the following:
 CONNECTION_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/your-db
-```
-
 Then start the server:
 
-```bash
+bash
 npm start
-```
-
-Server runs on [http://localhost:5001](http://localhost:5001)
-
----
+Server runs on http://localhost:5001
 
 ## 🧩 Key Features
 
