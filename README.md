@@ -39,18 +39,21 @@ cd client
 npm install
 npm start
 Visit the app on http://localhost:3000
-
-🛠️ Backend
-bash
+```
+### 🛠️ Backend
+```bash
 cd server
 npm install
 Create a .env file in the server/ directory with the following:
+```
 CONNECTION_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/your-db
 Then start the server:
-
-bash
+```bash
 npm start
 Server runs on http://localhost:5001
+---
+---
+```
 
 ## 🧩 Key Features
 
@@ -87,8 +90,8 @@ Server runs on http://localhost:5001
 ## 🔌 API Endpoints
 
 ### 👑 Admin Routes
-
 ```
+
 POST    /api/admin/login
 POST    /api/admin/register
 POST    /api/admin/addFaculty
@@ -165,15 +168,6 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ---
 
-## 🌐 Live Demo (Optional)
-
-Add your deployed link here if hosted:
-
-```
-https://your-live-site-url.com
-```
-
----
 
 ## ✨ Acknowledgements
 
